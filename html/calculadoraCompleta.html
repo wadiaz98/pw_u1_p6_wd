@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../css/calculadora.css">
+    <script src="../js/calculadoraCompleta.js"></script>
   </head>
   <body>
     <header></header>
@@ -12,23 +13,25 @@
     <section>
       <div class="container">
         <div class="calculadora">
-          <div class="display"></div>
-          <button id="c" class="col2">C</button>
+          <div class="display">
+            <label id="idResultado"></label>
+          </div>
+          <button id="c" class="col2" onclick="resetearVariables()">C</button>
           <button>&#x232b;</button>
-          <button>÷</button>
-          <button>7</button>
-          <button>8</button>
-          <button>9</button>
-          <button>X</button>
-          <button>4</button>
-          <button>5</button>
-          <button>6</button>
+          <button >÷</button>
+          <button onclick="obtenerCantidad(7)">7</button>
+          <button onclick="obtenerCantidad(8)">8</button>
+          <button onclick="obtenerCantidad(9)">9</button>
+          <button >X</button>
+          <button onclick="obtenerCantidad(4)">4</button>
+          <button onclick="obtenerCantidad(5)">5</button>
+          <button onclick="obtenerCantidad(6)">6</button>
           <button>-</button>
-          <button>1</button>
-          <button>2</button>
-          <button>3</button>
-          <button>+</button>
-          <button class="col2">0</button>
+          <button onclick="obtenerCantidad(1)">1</button>
+          <button onclick="obtenerCantidad(2)">2</button>
+          <button onclick="obtenerCantidad(3)">3</button>
+          <button onclick="obtenerCantidad('+')">+</button>
+          <button class="col2" onclick="obtenerCantidad(0)">0</button>
           <button>.</button>
           <button>=</button>
         </div>
