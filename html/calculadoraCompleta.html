@@ -14,26 +14,26 @@
       <div class="container">
         <div class="calculadora">
           <div class="display">
-            <label id="idResultado"></label>
+            <label id="idResultado">0</label>
           </div>
-          <button id="c" class="col2" onclick="resetearVariables()">C</button>
-          <button>&#x232b;</button>
-          <button >÷</button>
+          <button id="c" class="col2" onclick="obtenerCantidad('R')">C</button>
+          <button onclick="borrarUltimo()">&#x232b;</button>
+          <button onclick="obtenerCantidad('÷')">÷</button>
           <button onclick="obtenerCantidad(7)">7</button>
           <button onclick="obtenerCantidad(8)">8</button>
           <button onclick="obtenerCantidad(9)">9</button>
-          <button >X</button>
+          <button onclick="obtenerCantidad('X')">X</button>
           <button onclick="obtenerCantidad(4)">4</button>
           <button onclick="obtenerCantidad(5)">5</button>
           <button onclick="obtenerCantidad(6)">6</button>
-          <button>-</button>
+          <button onclick="obtenerCantidad('-')">-</button>
           <button onclick="obtenerCantidad(1)">1</button>
           <button onclick="obtenerCantidad(2)">2</button>
           <button onclick="obtenerCantidad(3)">3</button>
           <button onclick="obtenerCantidad('+')">+</button>
           <button class="col2" onclick="obtenerCantidad(0)">0</button>
-          <button>.</button>
-          <button>=</button>
+          <button onclick="obtenerCantidad('.')">.</button>
+          <button onclick="obtenerCantidad('=')">=</button>
         </div>
       </div>
     </section>
